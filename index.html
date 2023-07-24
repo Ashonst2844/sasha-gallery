@@ -5,15 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 		<script src="https://kit.fontawesome.com/7ea424b8bb.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<div class="profile-layout" id="profile-layout">
+			<div class="profile-container">
+				<img src="img/user-image.jpg" alt="Profile Image">
+				<div class="profile-form">
+					<input type="text" name="username" id="username" placeholder="Enter Username :">
+					<input type="email" name="email" id="email" placeholder="Enter E-mail :">
+					<button id="save-exit-button" onclick="saveData()">Save & Exit</button>
+				</div>
+			</div>
+		</div>
         <header>
             <div class="title">
-                <h1><a href="index.html">Sasha Gallery</a></h1>
+                <h1><a href="index.html"><span id="name"></span> Gallery</a></h1>
             </div>
             <div class="profile">
-                <a href="#"><img src="img/user-image.jpg" alt=""></a>
+                <a href="#" id="open-profile"><img src="img/user-image.jpg" alt=""></a>
             </div>
         </header>
 
@@ -38,5 +50,6 @@
 		</footer>
 
 		<script src="script.js"></script>
+		<script src="jquery.js"></script>
 	</body>
 </html>

@@ -47,6 +47,65 @@ header {
 .profile img:hover {
     box-shadow: var(--shadow-);
 }
+.profile-layout {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+.profile-container {
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: var(--background-);
+    border-radius: 20px;
+    box-shadow: var(--shadow-);
+    padding: 20px;
+}
+.profile-container img {
+    border-radius: 50%;
+    width: 15%;
+    margin-left: 42.50%;
+    margin-right: 42.50%;
+    border: 3px solid var(--secondary-);
+}
+.profile-container div {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.profile-container div input {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 28px;
+    border-radius: 30px;
+    padding-left: 10px;
+    border: none;
+    background-color: var(--secondary-);
+    color: var(--font-);
+}
+.profile-container div button {
+    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: var(--secondary-);
+    color: var(--font-);
+    border: none;
+    border-radius: 30px;
+}
+.profile-container div button:hover {
+    background-color: var(--font-);
+    color: var(--secondary-);
+}
+
 .slide-show-container {
     max-width: 1000px;
     position: relative;

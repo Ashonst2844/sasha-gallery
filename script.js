@@ -63,3 +63,10 @@ function updateSlides() {
     
 }
 updateSlides();
+
+function saveData() {
+    var displayName = document.getElementById("name");
+    var username = document.getElementById("username").value;
+    displayName.innerHTML = username ;
+}
+saveData();
