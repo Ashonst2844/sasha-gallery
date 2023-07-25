@@ -67,6 +67,11 @@ updateSlides();
 function saveData() {
     var displayName = document.getElementById("name");
     var username = document.getElementById("username").value;
-    displayName.innerHTML = username ;
+    
+    if (username == "") {
+        displayName.innerHTML = "Your "
+    } else {
+        displayName.innerHTML = username
+    }
 }
 saveData();
