@@ -18,12 +18,13 @@ function loopSlideShow(add) {
 loopSlideShow(5);
 
 function loopGallery() {
-    var totalImage = 10
+    let totalImage = 10
     for (let i = 0; i < totalImage; i++) {
         const parent = document.getElementById("container");
         const crtImg = document.createElement("img");
-        crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg")
-        parent.appendChild(crtImg)
+        crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
+        crtImg.setAttribute("class", "pic")
+        parent.appendChild(crtImg);
     }
 }
 loopGallery();
@@ -43,7 +44,7 @@ function minSlides() {
 
 // updating slide if button previous/next button clicked
 function updateSlides() {
-    var slide = document.getElementsByClassName("slide-box");
+    let slide = document.getElementsByClassName("slide-box");
 
     if (slideIndex < 0) {
         slideIndex = slide.length - 1
@@ -65,8 +66,8 @@ function updateSlides() {
 updateSlides();
 
 function saveData() {
-    var displayName = document.getElementById("name");
-    var username = document.getElementById("username").value;
+    let displayName = document.getElementById("name");
+    let username = document.getElementById("username").value;
     
     if (username == "") {
         displayName.innerHTML = "Your "
