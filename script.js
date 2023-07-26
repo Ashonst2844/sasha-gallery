@@ -19,12 +19,16 @@ loopSlideShow(5);
 
 function loopGallery() {
     let totalImage = 10
+    const parent = document.getElementById("container");
+
     for (let i = 0; i < totalImage; i++) {
-        const parent = document.getElementById("container");
+        const crtA = document.createElement("a");
         const crtImg = document.createElement("img");
+        crtA.setAttribute("href", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
+        crtA.setAttribute("target", "_blank")
         crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
-        crtImg.setAttribute("class", "pic")
-        parent.appendChild(crtImg);
+        crtA.appendChild(crtImg)
+        parent.appendChild(crtA);
     }
 }
 loopGallery();
