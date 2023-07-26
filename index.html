@@ -10,6 +10,7 @@
 		<script src="https://kit.fontawesome.com/7ea424b8bb.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<!--Layout for "Log-in"-->
 		<div class="profile-layout" id="profile-layout">
 			<div class="profile-container">
 				<img src="img/user-image.jpg" alt="Profile Image">
@@ -20,6 +21,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Header with title and profile-->
         <header>
             <div class="title">
                 <h1><a href="index.html"><span id="name"></span> Gallery</a></h1>
@@ -31,6 +34,8 @@
 
 		<div class="slide-show-container" id="parent">
 			<!-- Slides for the gallery go here-->
+
+			<!--Control button for Slide-show-->
 			<div class="prev" onclick="minSlides()"><i class="fa-solid fa-caret-left"></i></div>
 			<div class="next" onclick="plusSlides()"><i class="fa-solid fa-caret-right"></i></div>
 		</div>
@@ -39,6 +44,15 @@
 			<!-- Images and their captions will be added dynamically -->
 		</div>
 
+		<!--Button to upload more image-->
+		<label for="add-image" onclick="addFile()">
+			<div class="add-image">
+				<p><i class="fa-solid fa-plus"></i></p>
+			</div>
+		</label>
+		<!-- <input type="file" name="add-image" id="add-image" class="add-image-button"> -->
+
+		<!--Footer with social media-->
 		<footer>
 			<div class="social-media">
 				<h3>Social Media :</h3>

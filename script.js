@@ -1,10 +1,7 @@
 // Looping the slideshow on html element 
 function loopSlideShow(add) {
-    elem = add + 1
-
-    for (let i = 1; i < elem; i++) {
+    for (let i = 1; i < (add + 1); i++) {
         const parent = document.getElementById("parent")
-
         const crtDiv = document.createElement("div");
         crtDiv.classList.add("slide-box")
 
@@ -18,7 +15,7 @@ function loopSlideShow(add) {
 loopSlideShow(5);
 
 function loopGallery() {
-    let totalImage = 11
+    var totalImage = 11
     const parent = document.getElementById("container");
 
     for (let i = 0; i < totalImage; i++) {
@@ -26,6 +23,7 @@ function loopGallery() {
         const crtImg = document.createElement("img");
         crtA.setAttribute("href", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
         crtA.setAttribute("target", "_blank")
+        crtA.setAttribute("class", "number")
         crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
         crtA.appendChild(crtImg);
         parent.appendChild(crtA);
@@ -80,3 +78,7 @@ function saveData() {
     }
 }
 saveData();
+
+function addFile() {
+    alert("under maintenance")
+}
