@@ -18,7 +18,7 @@ function loopSlideShow(add) {
 loopSlideShow(5);
 
 function loopGallery() {
-    let totalImage = 10
+    let totalImage = 11
     const parent = document.getElementById("container");
 
     for (let i = 0; i < totalImage; i++) {
@@ -27,7 +27,7 @@ function loopGallery() {
         crtA.setAttribute("href", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
         crtA.setAttribute("target", "_blank")
         crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
-        crtA.appendChild(crtImg)
+        crtA.appendChild(crtImg);
         parent.appendChild(crtA);
     }
 }
