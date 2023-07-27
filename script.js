@@ -23,7 +23,6 @@ function loopGallery() {
         const crtImg = document.createElement("img");
         crtA.setAttribute("href", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
         crtA.setAttribute("target", "_blank")
-        crtA.setAttribute("class", "number")
         crtImg.setAttribute("src", "img/gallery-content/wallpaper" + (i + 1) + ".jpg");
         crtA.appendChild(crtImg);
         parent.appendChild(crtA);
@@ -78,7 +77,3 @@ function saveData() {
     }
 }
 saveData();
-
-function addFile() {
-    alert("under maintenance")
-}
